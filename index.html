@@ -10,27 +10,24 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Shadows+Into+Light&display=swap');
 
-* {
+{
   box-sizing: border-box;
 }
 
-.row {
-  display: flex;
+.column {
+  float: left;
+  width: 50%;
 }
 
-/* Create two equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 10px;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 body {
   background-color: CB9DF0;
-  }
-
-  div {
-    width: 1200px;
-  }
+}
 
 h1 {
   color: FFF9BF;  
@@ -62,15 +59,10 @@ p, ul, dl {
 
 </style>
 </head>
-
-
-
-
-
   
 <body>
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
+  <div class="column">
 <h1>Spinach, Tofu and Sesame Stir-Fry </h1>
 <dl>
   <dd>By: Martha Rose Shulman</dd>
@@ -92,7 +84,7 @@ p, ul, dl {
 </ul>
   
 </div>
-<div class="column" style="background-color:#bbb;">
+<div class="column">
 
 <img src="recipe.jpg" alt="picture of food">
 
